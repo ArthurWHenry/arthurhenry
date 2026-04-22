@@ -1,0 +1,25 @@
+---
+import { Font } from "astro:assets";
+import "../styles/global.css";
+---
+
+<html>
+  <head>
+    <title>Arthur Henry</title>
+    <meta name="description" content="Arthur Henry's personal website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+    <Font cssVariable="--font-inter" />
+  </head>
+  <body>
+    <header>
+      <h1>Arthur Henry</h1>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <p>Copyright 2026 Arthur Henry</p>
+    </footer>
+  </body>
+</html>
